@@ -1695,7 +1695,7 @@ function myalerts_usercp_menu()
 	if (!isset($collapsed['usercpalerts_e'])) {
 		$collapsed['usercpalerts_e'] = '';
 	}
-	$expaltext = (in_array('usercpalerts', $collapse)) ? $lang->expcol_expand : $lang->expcol_collapse;
+	$expaltext = (in_array('usercpalerts', $collapsed)) ? $lang->expcol_expand : $lang->expcol_collapse;
 
 	if ($mybb->user['unreadAlerts'] > 0) {
 		$lang->myalerts_usercp_nav_alerts = '<strong>' . $lang->myalerts_usercp_nav_alerts . ' (' . my_number_format(
